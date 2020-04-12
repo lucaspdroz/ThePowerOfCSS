@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/modes/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../styles/modes/light.css"
+        media="(prefers-color-scheme: no-preference),(prefers-color-scheme: light)">
+
+    <style>
+        a{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <div class="darkmode lightmode">
+                <h1>Darkmode vindo do OS</h1>
+                <pre>
+                    @media (prefers-color-scheme: dark) {
+                        darkmode::after {
+                            content: 'Hello Darkness my old friend 🐸';
+                        }
+                    }
+                    
+                    @media (prefers-color-scheme: light) {
+                        lightmode::after {
+                            content: 'Shuttdown the lights Bro... i wanna sleep 🦇';
+                        }
+                    }
+                </pre>
+
+            </div>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+                target="_blank">mdn</a>
+            <a href="https://caniuse.com/#search=prefers-color-scheme" target="_blank">can i use</a>
+        </div>
+        <div class="link-bottom">
+            <a href="10-slide.html"> Proximo</a>
+        </div>
+    </section>
+</body>
+
+<script>
+    // Verify theme API is supported by the Browser in OS System
+    if (window.matchMedia('prefers-color-scheme').media != "not all") {
+        console.log("YEAH!, Your browser support DARK MODE!!! :D");
+    } else {
+        console.log("Your browser doesn't support this DARK MODE... YET... :(");
+    }
+</script>
+
+</html>

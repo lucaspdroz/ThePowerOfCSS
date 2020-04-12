@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <section class="neumorphism">
+        <div class="content">
+            <img class="google" src="../assets/googlelogo_color_272x92dp.png" alt="Google Logo">
+            <div class="mic-button">
+                <img class="mic" src="../assets/googlemic_color_24dp.png" alt="microphone icon">
+                <div class="voice color-blue"></div>
+                <div class="voice color-red"></div>
+                <div class="voice color-yellow"></div>
+                <div class="voice color-green"></div>
+            </div>
+        </div>
+    </section>
+    <div class="link-bottom">
+        <a href="07-contador.html"> Proximo</a>
+    </div>
+</body>
+
+<script>
+    // Google button
+    let button = document.querySelector(".mic-button");
+
+    button.addEventListener("click", () => {
+        document.querySelector(".mic").style.display = "none";
+        document.querySelector(".color-blue").style.display = "block";
+        document.querySelector(".color-red").style.display = "block";
+        document.querySelector(".color-yellow").style.display = "block";
+        document.querySelector(".color-green").style.display = "block";
+    }); 
+</script>
+
+</html>

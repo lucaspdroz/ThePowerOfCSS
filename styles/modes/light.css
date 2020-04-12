@@ -2,3 +2,7 @@
     --color: #000;
     --background-color: #fff;
 }
+
+pre{
+    color: var(--color);
+}

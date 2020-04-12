@@ -28,28 +28,14 @@
     margin: auto;
 }
 
-section:nth-child(1) {
-    background-color: aqua;
-}
-
-section:nth-child(2) {
-    background-color: blueviolet;
-}
-
-section:nth-child(3) {
-    background-color: transparent;
-}
-
-section:nth-child(4) {
-    background-color: var(--secoundary-color);
-}
-
-section:nth-child(5) {
-    background-color: var(--primary-color);
-}
-
 .darkmode-wraper {
     right: 10px;
     top: 10px;
     position: fixed;
+}
+
+.link-bottom{
+    position: absolute;
+    top: 90vh;
+    right: 100px;
 }
