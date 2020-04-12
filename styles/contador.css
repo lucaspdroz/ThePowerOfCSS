@@ -1,8 +1,9 @@
 .counter ul {
-    counter-reset: bla;
+    counter-reset: counter;
+    list-style: none;
 }
 
 .counter li::before {
-    counter-increment: bla;
-    content: "§ " counter(bla) ": ";
+    counter-increment: counter;
+    content: "§ " counter(counter) ": ";
 }
