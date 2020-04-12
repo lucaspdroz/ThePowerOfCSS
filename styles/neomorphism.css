@@ -1,0 +1,31 @@
+.neumorphism {
+    background-color: var(--ice);
+}
+
+.neumorphism-text {
+    color: var(--ice);
+    font-size: 5em;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, .08), -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+.neumorphism-animated-text {
+    font-size: 5em;
+    color: var(--ice);
+    text-align: center;
+    animation: ease-in-out 6s neumorphism-Animation infinite;
+}
+
+@keyframes neumorphism-Animation {
+    0% {
+        text-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08), -3px -3px 3px rgba(255, 255, 255, 1);
+    }
+    50% {
+        text-shadow: 6px 6px 6px rgba(0, 0, 0, .08), -5px -5px 10px rgba(255, 255, 255, 1);
+    }
+    90% {
+        text-shadow: 6px 6px 6px rgba(0, 0, 0, .08), -5px -5px 10px rgba(255, 255, 255, 1);
+    }
+    100% {
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, .08), 0px 0 0px rgba(255, 255, 255, 1);
+    }
+}

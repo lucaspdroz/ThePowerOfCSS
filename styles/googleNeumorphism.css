@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Section 1 */
+
+.lupa {
+    margin-top: 3px;
+    color: #9AA0A6;
+    height: 20px;
+    width: 20px;
+    margin: 12px -94px;
+    z-index: 3;
+}
+
+.mic-bar {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    margin: 9px 334px;
+    z-index: 3;
+}
+
+.reset {
+    display: grid;
+}
+
+#mySearch {
+    width: 500px;
+    height: 44px;
+    padding-left: 50px;
+    position: absolute;
+    border: none;
+    border-radius: 24px;
+    margin: auto -117px;
+    background: var(--ice);
+    /* box-shadow: 6px 6px 12px rgba(0, 0, 0, .08), -6px -6px 12px rgba(255, 255, 255, 1); */
+}
+
+#mySearch:active {
+    animation:  1s ourShadow both;
+}
+
+#mySearch:focus {
+    outline: 0;
+    animation:  1s ourShadow both;
+}
+
+@keyframes boxAnimation {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08),
+            -3px -3px 3px rgba(255, 255, 255, 1);
+    }
+
+    50% {
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, .08),
+            -5px -5px 10px rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, .08),
+            -6px -6px 12px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Section 2 */
+.mic-button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: #eaeaea;
+    border-radius: 100%;
+    vertical-align: middle;
+    /* box-shadow: 6px 6px 12px rgba(0, 0, 0, .08),
+        -6px -6px 12px rgba(255, 255, 255, 1); */
+}
+
+.mic-button {
+    animation: 3s ourShadow forwards;
+    /* transition: 3s; */
+}
+
+.google {
+    display: flex;
+    height: 92px;
+    width: 272px;
+    margin: auto 0 25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.mic {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+}
+
+.voice {
+    width: 10px;
+    height: 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    transition: 2s;
+}
+
+.color-blue {
+    background-color: #4285F4;
+    transform: translate(-25px, 0);
+    animation: 1.4s bars infinite;
+}
+
+.color-red {
+    background-color: #EA4335;
+    transform: translate(-10px, 0);
+    animation: 2.4s bars infinite;
+}
+
+.color-yellow {
+    background-color: #FBBC05;
+    transform: translate(10px, 0);
+    animation: 2.7s bars infinite;
+}
+
+.color-green {
+    background-color: #34A853;
+    transform: translate(30px, 0);
+    animation: 2.3s bars infinite;
+}
+
+@keyframes bars {
+    0% {
+        height: 15px;
+        opacity: 1;
+    }
+    10% {
+        height: 30px;
+    }
+    25% {
+        height: 17px;
+    }
+    45% {
+        height: 40px;
+    }
+    70% {
+        height: 15px;
+    }
+    100% {
+        height: 15px;
+        opacity: 1;
+    }
+}
+
+@keyframes ourShadow {
+    0% {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, .08), -0px -0px 0px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, .08), -6px -6px 12px rgba(255, 255, 255, 1);
+    }
+}

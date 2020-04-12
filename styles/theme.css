@@ -1,0 +1,54 @@
+@import url('modes/setTheme.css');
+:root {
+    /* Theme colors */
+    --primary-color: rgb(169, 169, 170);
+    --secoundary-color: #074B83;
+    --black: #000;
+    --link-color: #2196F3;
+    --white: #fff;
+    --ice: #eaeaea;
+    --main-font: 'Roboto', sans-serif;
+    /* Font size */
+    --full-size: 2rem;
+    --normal-size: 1rem;
+    --half-size: .5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    font-family: var(--main-font);
+    color: var(--color);
+    background: var(--background-color);
+    font-size: var(--full-size);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    margin: 5px;
+}
+
+pre {
+    margin: 0;
+    color: var(--white);
+    font-size: var(--normal-size);
+}

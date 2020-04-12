@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('theme.css');
+@import url('contador.css');
+@import url('neomorphism.css');
+@import url('googleNeumorphism.css');
+.__first_slide img {
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+.double-section {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section1, #section2 {
+    width: 50vw;
+    height: 40vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+section:nth-child(1) {
+    background-color: aqua;
+}
+
+section:nth-child(2) {
+    background-color: blueviolet;
+}
+
+section:nth-child(3) {
+    background-color: transparent;
+}
+
+section:nth-child(4) {
+    background-color: var(--secoundary-color);
+}
+
+section:nth-child(5) {
+    background-color: var(--primary-color);
+}
+
+.darkmode-wraper {
+    right: 10px;
+    top: 10px;
+    position: fixed;
+}
