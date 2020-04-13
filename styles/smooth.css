@@ -1,0 +1,9 @@
+
+body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    font-family: var(--main-font);
+    color: var(--color);
+    background: var(--background-color);
+    font-size: var(--full-size);
+}
