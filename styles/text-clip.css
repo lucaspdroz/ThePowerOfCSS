@@ -1,0 +1,31 @@
+body {
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: -1px;
+    background-image: url(https://www.estudopratico.com.br/wp-content/uploads/2016/12/gandhi-1200x675.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    filter: grayscale(100%);
+    line-height: 13px;
+    animation: size 8s infinite alternate;
+    -webkit-background-clip: text;
+}
+
+@keyframes size {
+    0% {
+        font-size: 0px;
+    }
+
+    100% {
+        font-size: 20px;
+    }
+}
