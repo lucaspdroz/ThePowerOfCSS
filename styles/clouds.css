@@ -42,9 +42,9 @@ section {
 
 @keyframes clouds {
     0% {
-        transform: translate(100%);
+        transform: translate(150vw);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-150vw);
     }
 }

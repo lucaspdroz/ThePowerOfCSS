@@ -29,6 +29,7 @@
     padding-left: 50px;
     position: absolute;
     border: none;
+    text-align: left;
     border-radius: 24px;
     margin: auto -117px;
     background: var(--ice);

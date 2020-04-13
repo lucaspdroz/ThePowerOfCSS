@@ -17,7 +17,7 @@ section p {
     filter: grayscale(100%);
     line-height: 13px;
     animation: size 8s infinite alternate;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 @keyframes size {

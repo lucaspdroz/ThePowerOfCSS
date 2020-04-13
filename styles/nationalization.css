@@ -37,7 +37,6 @@
 .ring {
     border: 1px solid #00b3ff;
     width: var(--proportion);
-  
     height: var(--proportion);
     display: flex;
     border-radius: 500px;
