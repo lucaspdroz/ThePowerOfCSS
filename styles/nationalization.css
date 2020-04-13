@@ -1,0 +1,66 @@
+:root {
+    --proportion: 300px;
+}
+
+:lang(ja) {
+    text-align: right;
+}
+
+.text:lang(ja)::after {
+    content: '人生は驚きの箱ですが、すべてうまくいくことができます';
+}
+
+:lang(pt-br) {
+    text-align: center;
+}
+
+.text:lang(pt-br)::after {
+    content: 'A vida é uma caixinha de surpresas, no entanto tudo pode dar certo';
+    text-align: center;
+}
+
+:lang(en) {
+    text-align: justify;
+}
+
+.text:lang(en)::after {
+    content: 'Life is a box of surprises, however everything can work out';
+    text-align: justify;
+}
+
+.text {
+    color: #fff;
+    width: 200px;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 400px #00b3ff;
+}
+
+.ring {
+    border: 1px solid #00b3ff;
+    width: var(--proportion);
+  
+    height: var(--proportion);
+    display: flex;
+    border-radius: 500px;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    animation: animate .5s infinite alternate-reverse;
+}
+
+@keyframes animate {
+    0% {
+        background-color: black;
+        filter: blur(2px);
+        box-shadow: 0 0 10px #00b3ff;
+    }
+    25%, 75% {
+        background-color: #111;
+        filter: blur(2px);
+        box-shadow: none;
+    }
+    100% {
+        background-color: black;
+        filter: blur(2px);
+        box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;
+    }
+}
