@@ -1,9 +1,11 @@
-
 @media (prefers-color-scheme: dark) {
     .darkmode::after {
         content: 'Hello Darkness my old friend 🐸';
         background-color: var(--black);
         text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }
 
@@ -12,5 +14,8 @@
         content: 'Shuttdown the lights Bro... i want sleep 🦇';
         background-color: var(--white);
         text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }
